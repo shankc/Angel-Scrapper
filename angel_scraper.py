@@ -13,8 +13,7 @@ from lxml import html
 import pandas as pd
 
 
-COOKIE = '__utma=242977874.1904356093.1467698421.1475821922.1475824953.46; __utmv=242977874.|2=created_at=20150802=1^3=investor=false=1^4=talent%20profile=true=1^5=q=3=1; mp_6a8c8224f4f542ff59bd0e2312892d36_mixpanel=%7B%22distinct_id%22%3A%20%221431679%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%2C%22utm_source%22%3A%20%22top_nav_home%22%2C%22%24username%22%3A%20%22mayuukh-varshney%22%2C%22angel%22%3A%20false%2C%22candidate%22%3A%20true%2C%22roles%22%3A%20%5B%0A%20%20%20%20%22developer%22%2C%0A%20%20%20%20%22mobile_developer%22%0A%5D%2C%22quality_ceiling%22%3A%20%223%22%2C%22utm_medium%22%3A%20%22email%22%2C%22utm_campaign%22%3A%20%22talent-startup_interested_email%22%2C%22utm_content%22%3A%20%22startup-name%22%2C%22utm_term%22%3A%20%22fabulyst%22%2C%22%24search_engine%22%3A%20%22google%22%7D; fs_uid=www.fullstory.com`1JRNY`6571243146838016:5724160613416960`1431679`; ajs_anonymous_id=%225f2f7e7a6ccb1e6db65bf2f382bae6e5%22; _gat=1; _angellist=23acd08ea83d15a4ac7a6a540cd00eba; _ga=GA1.2.1904356093.1467698421; _gid=GA1.2.1900087845.1511886962; ajs_group_id=null; ajs_user_id=%221431679%22; amplitude_idangel.co=eyJkZXZpY2VJZCI6ImZkZmY2OGUyLTk4ZTYtNDBhZi1hOTViLTQwYjIyZWJiYzcwZlIiLCJ1c2VySWQiOiIxNDMxNjc5Iiwib3B0T3V0IjpmYWxzZSwic2Vzc2lvbklkIjoxNTEyNDAwMzU1MjAyLCJsYXN0RXZlbnRUaW1lIjoxNTEyNDAwNTEzNjUyLCJldmVudElkIjoxNDc1LCJpZGVudGlmeUlkIjo4NjQsInNlcXVlbmNlTnVtYmVyIjoyMzM5fQ=='
-
+COOKIE = 'cookie'
 headers = {
 	'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
 	'Cookie': COOKIE,
@@ -22,7 +21,7 @@ headers = {
 	'Origin': 'https://angel.co',
 	'Referer': 'https://angel.co/companies',
 	'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
-	'X-CSRF-Token': 'zIvGnKYNL9xHjri+7fuqGIz0/7bvm6xEmDE2QtD5jTBmK6v5Oo63+n6jYTZIoXJjxEGVQGik2l0vCKN6wN7z9A==',
+	'X-CSRF-Token': 'csrf token',
 	'X-Requested-With': 'XMLHttpRequest'
 }
 
@@ -35,8 +34,8 @@ ANGEL_LIST_URL ='https://angel.co/'
 startup_dict = {}
 GOOGLE_POSITION_TEXT = " ceo linkedin"
 ANGEL_LIST_SEARCH_QUERY_LIMIT = 20
-API_KEY = 'AIzaSyCjcyL0WEcZN_Se7RdMFFFBQjBN4UpUUK0'
-SEARCH_ENGINE_ID = '012122631653900561876:twjbsqmjf1m'
+API_KEY = 'Google Search API key'
+SEARCH_ENGINE_ID = 'Google search engine id'
 DOMAIN_SEARCH_LINK = 'https://autocomplete.clearbit.com/v1/companies/suggest?query='
 
 driver = webdriver.Chrome('/Users/mayuukhvarshney/documents/ChromeWebDriver/chromedriver')
